@@ -2,6 +2,8 @@
 
 Jenkins Slave for Sonar Runner. Docker image based on OpenJDK official image.
 
+	https://hub.docker.com/r/jnonino/jenkins-slave-sonar-runner/
+
 ## Tools Installed ##
 
 - Sonar Runner

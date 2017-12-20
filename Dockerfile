@@ -15,7 +15,10 @@ RUN mkdir -p /opt && \
 ENV SONAR_RUNNER_HOME /opt/sonar-runner
 ENV PATH $SONAR_RUNNER_HOME/bin:$PATH
 
-RUN mkdir /ws
-WORKDIR /ws
+RUN addgroup -S -g 10000 jenkins && \
+    adduser -S -u 10000 -h /home/jenkins -G jenkins jenkins
 
-CMD ["/bin/bash"]
+USER jenkins
+WORKDIR /home/jenkins
+
+CMD ["/bin/sh"]

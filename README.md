@@ -4,6 +4,11 @@ Jenkins Slave for Sonar Runner. Docker image based on OpenJDK official image.
 
 	https://hub.docker.com/r/jnonino/jenkins-slave-sonar-runner/
 
+## Docker Image Tags ##
+
+-	[`jre-alpine` (*jre-alpine/Dockerfile*)](https://github.com/jnonino/jenkins-slave-sonar-runner/blob/master/jre-alpine/Dockerfile)
+-	[`8-jre-alpine` (*8-jre-alpine/Dockerfile*)](https://github.com/jnonino/jenkins-slave-gradle/blob/master/8jre-alpine/Dockerfile)
+
 ## Tools Installed ##
 
 - Sonar Runner

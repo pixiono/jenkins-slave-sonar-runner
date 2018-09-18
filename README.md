@@ -28,7 +28,7 @@ Jenkins Slave for Sonar Runner. Docker image based on OpenJDK official image.
 To add custom certificates and root CAs, create a new Dockerfile and import them with the following code.
 
 	FROM jnonino/jenkins-slave-sonar-runner
-	LABEL maintainer="Julian Nonino <noninojulian@outlook.com>"
+	LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 	# Trust Root CA
 	COPY Root_CA.crt /tmp

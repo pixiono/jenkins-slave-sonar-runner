@@ -1,4 +1,4 @@
-# Jenkins Slave Sonar Runner #
+# Jenkins Slave Sonar Runner [![Docker hub](https://img.shields.io/docker/pulls/jnonino/jenkins-slave-sonar-runner.svg)](https://hub.docker.com/r/jnonino/jenkins-slave-sonar-runner/)
 
 Jenkins Slave for Sonar Runner. Docker image based on OpenJDK official image.
 

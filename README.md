@@ -4,11 +4,11 @@
 [![](hhttps://img.shields.io/docker/build/jnonino/jenkins-slave-sonar-runner)](https://hub.docker.com/r/jnonino/jenkins-slave-sonar-runner/)
 [![](https://img.shields.io/docker/automated/jnonino/jenkins-slave-sonar-runner)](https://hub.docker.com/r/jnonino/jenkins-slave-sonar-runner/)
 [![](https://img.shields.io/docker/stars/jnonino/jenkins-slave-sonar-runner)](https://hub.docker.com/r/jnonino/jenkins-slave-sonar-runner/)
-[![](https://img.shields.io/github/license/jnonino/jenkins-slave-sonar-runner-docker-image)](https://github.com/jnonino/jenkins-slave-sonar-runner-docker-image)
-[![](https://img.shields.io/github/issues/jnonino/jenkins-slave-sonar-runner-docker-image)](https://github.com/jnonino/jenkins-slave-sonar-runner-docker-image)
-[![](https://img.shields.io/github/issues-closed/jnonino/jenkins-slave-sonar-runner-docker-image)](https://github.com/jnonino/jenkins-slave-sonar-runner-docker-image)
-[![](https://img.shields.io/github/languages/code-size/jnonino/jenkins-slave-sonar-runner-docker-image)](https://github.com/jnonino/jenkins-slave-sonar-runner-docker-image)
-[![](https://img.shields.io/github/repo-size/jnonino/jenkins-slave-sonar-runner-docker-image)](https://github.com/jnonino/jenkins-slave-sonar-runner-docker-image)
+[![](https://img.shields.io/github/license/cn-cicd/jenkins-slave-sonar-runner)](https://github.com/cn-cicd/jenkins-slave-sonar-runner)
+[![](https://img.shields.io/github/issues/cn-cicd/jenkins-slave-sonar-runner)](https://github.com/cn-cicd/jenkins-slave-sonar-runner)
+[![](https://img.shields.io/github/issues-closed/cn-cicd/jenkins-slave-sonar-runner)](https://github.com/cn-cicd/jenkins-slave-sonar-runner)
+[![](https://img.shields.io/github/languages/code-size/cn-cicd/jenkins-slave-sonar-runner)](https://github.com/cn-cicd/jenkins-slave-sonar-runner)
+[![](https://img.shields.io/github/repo-size/cn-cicd/jenkins-slave-sonar-runner)](https://github.com/cn-cicd/jenkins-slave-sonar-runner)
 
 Jenkins Slave for Sonar Runner. Docker image based on OpenJDK official image.
 

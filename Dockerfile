@@ -7,7 +7,7 @@ RUN apk add --no-cache git subversion mercurial wget curl unzip openssh ca-certi
 # Install Sonar Runner
 ENV SONAR_RUNNER_VERSION 2.4
 RUN mkdir -p /opt && \
-    wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/${SONAR_RUNNER_VERSION}/sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip && \
+    wget https://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/${SONAR_RUNNER_VERSION}/sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip && \
     unzip sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip && \
     mv sonar-runner-${SONAR_RUNNER_VERSION} /opt/sonar-runner && \
     rm -rf sonar-runner-dist-${SONAR_RUNNER_VERSION}.zip && \

@@ -6,15 +6,16 @@ RUN apk add --no-cache git subversion mercurial wget curl unzip openssh ca-certi
 
 # Install Sonar Runner
 ENV SONAR_SCANNER_VERSION 4.3.0.2102
+ENV SONAR_SCANNER_HOME /opt/sonar-scanner
+
 RUN mkdir -p /opt && \
     wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
     unzip sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
     mv sonar-scanner-${SONAR_SCANNER_VERSION}-linux /opt/sonar-scanner && \
     rm -rf sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip  && \
     rm -rf /opt/sonar-scanner/conf/sonar-scanner.properties && \
-    sed -i 's/use_embedded_jre=true/use_embedded_jre=false/g' /bin/sonar-scanner/bin/sonar-scanner
+    sed -i 's/use_embedded_jre=true/use_embedded_jre=false/g' ${SONAR_SCANNER_HOME}/bin/sonar-scanner
 
-ENV SONAR_SCANNER_HOME /opt/sonar-scanner
 ENV PATH $SONAR_SCANNER_HOME/bin:$PATH
 
 RUN addgroup -S -g 10000 jenkins && \

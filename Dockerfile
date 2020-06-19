@@ -13,8 +13,8 @@ RUN mkdir -p /opt && \
     rm -rf sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip  && \
     rm -rf /opt/sonar-scanner/conf/sonar-scanner.properties
 
-ENV SONAR_RUNNER_HOME /opt/sonar-runner
-ENV PATH $SONAR_RUNNER_HOME/bin:$PATH
+ENV SONAR_SCANNER_HOME /opt/sonar-scanner
+ENV PATH $SONAR_SCANNER_HOME/bin:$PATH
 
 RUN addgroup -S -g 10000 jenkins && \
     adduser -S -u 10000 -h /home/jenkins -G jenkins jenkins

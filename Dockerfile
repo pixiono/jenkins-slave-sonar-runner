@@ -11,7 +11,8 @@ RUN mkdir -p /opt && \
     unzip sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
     mv sonar-scanner-${SONAR_SCANNER_VERSION}-linux /opt/sonar-scanner && \
     rm -rf sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip  && \
-    rm -rf /opt/sonar-scanner/conf/sonar-scanner.properties
+    rm -rf /opt/sonar-scanner/conf/sonar-scanner.properties && \
+    sed -i 's/use_embedded_jre=true/use_embedded_jre=false/g' /bin/sonar-scanner/bin/sonar-scanner
 
 ENV SONAR_SCANNER_HOME /opt/sonar-scanner
 ENV PATH $SONAR_SCANNER_HOME/bin:$PATH
